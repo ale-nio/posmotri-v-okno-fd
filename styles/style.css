@@ -36,3 +36,313 @@ ul,
 ol {
   list-style: none;
 }
+
+
+  
+
+.visually-hidden {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.content {
+  display: flex;
+  align-items: end;
+  gap: 30px;
+  width: 1140px;
+}
+
+.fieldset {
+  border:none;
+  
+  
+}
+
+.result {
+  display:flex;
+  flex-direction: column;
+  align-items: start;
+  gap:16px;
+  border: none;
+}
+
+.result__video-container {
+  width:711px;
+  height:386px;
+ position:relative;
+ padding: 16px;
+
+}
+
+.result__video {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+
+.search-form {
+  display:flex;
+  justify-content:space-between;
+  align-items:start;
+  width: 100%;
+}
+
+.search-form__fieldset {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+  border: none;
+  margin-top:16px;
+  font-family: inherit;
+}
+
+.search-form__fieldset-title {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  padding-bottom: 5px;
+  color:#fff;
+
+}
+
+.search-form__label {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  cursor: pointer;
+  background: transparent;
+  gap:5px;
+}
+
+.search-form__label-text {
+  padding-right:15px;
+  text-decoration: underline;
+}
+
+.search-form__checkbox-list {
+  display:flex;
+  gap:15px;
+}
+
+.search-form__pseudo-checkbox {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width: 19px;
+  height: 19px;
+  border:1px solid #fff;
+}
+  
+
+.search-form__textfield {
+  display: flex;
+  width: 225px;
+  height: 27px;
+  border: none;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  background-color: transparent;
+  appearance: none;
+  color: #fff;
+  font: inherit;
+}
+
+.search-form__textfield:focus {
+  outline:none; 
+}
+
+.search-form__textfield:active {
+  outline: 1px solid #fff;
+}
+
+.search-form__textfield:hover {
+  cursor: text;
+}
+
+.search-form__textfield:focus-visible {
+  outline: none;
+}
+
+.content__video-card-description-container {
+  flex-grow: 1;
+}
+
+.content__details {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  gap: 26px;
+}
+
+.content__list {
+  overflow-y: auto; 
+  height: 298px;
+  position:relative;
+ 
+}
+
+.content__list-item:not(:last-child) {
+  padding-block-end: 30px;
+}
+
+.content__video-card {
+  display:flex;
+  flex-direction: row;
+  align-items:start;
+}
+
+.content__video-card:focus {
+  border: none;
+}
+
+.content__video-card:hover {
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+}
+
+.content__video-card:active {
+  background-color: #545050;
+}
+
+.content__video-card:focus-visible {
+  border: 1px solid #fff;
+}
+
+.content__video-card-thumbnail {
+  object-fit: cover;
+  object-position: center;
+  width: 194px;
+  height: 103px;
+}
+
+.title {
+  font-family:"Oswald", sans-serif;
+  font-size:75px;
+  font-weight:700;
+  line-height: 70.5px;
+  text-transform: uppercase;
+}
+
+.content__accent {
+  color:rgba(84, 80, 80, 1);
+}
+
+.content__card-link {
+ display:block;
+ margin:2px;
+ text-decoration:none;
+ color:#fff;
+}
+
+.content__card-link:focus {
+ outline:none; 
+}
+
+.content__card-link:focus-visible {
+  outline: 1px solid #fff;
+  outline-offset: 1px;
+}
+
+.content__card-link:hover {
+  color: #fff;
+  cursor: pointer;
+  text-decoration: underline; 
+}
+
+.content__card-link:active {
+  text-decoration: none;
+  background-color: #545050;
+}
+
+.content__video-card-title {
+  font-family:"Oswald", sans-serif;
+  font-size:30px;
+  font-weight:700;
+  line-height:30px;
+  color:#fff;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 200px;
+}
+
+.content__video-card-description {
+ line-height: 90%; 
+}
+
+.button {
+  background-color:transparent;
+  color:#fff;
+  border: 1px solid #fff;
+  cursor: pointer;  
+  margin-top:16px;
+  text-align:center;
+  font-family: "Fira Sans Condensent", sans-serif;
+  font-style:normal;
+  font-size:18px;
+  font-weight:700;
+  line-height:normal; 
+  
+}
+
+.search-form__submit-button {
+  width:194px;
+  height:34px;
+  align-self:end;
+}
+
+.more-button {
+  width:399px;
+  height:34px;
+}
+
+.search-form__label:focus {
+  outline: none;
+}
+
+.search-form__label:has(:focus-visible) {
+  outline: 1px solid #fff;
+  outline-offset: 2px;
+}
+
+input[type=checkbox]:checked + .search-form__pseudo-checkbox{
+border:#1b1919;
+background-color:#fff;
+}
+
+.search-form__label:hover {
+  text-decoration: underline;
+}
+
+.content__card-link_current {
+  background-color: #545050;
+  color: #fff;
+}
+
+.button:focus {
+  outline:none;
+}
+
+.button:hover {
+  text-decoration: underline;
+}
+
+.button:active {
+  outline: 1px solid #fff;
+  background-color: #545050;
+}
+
+.button:focus-visible {
+  outline: 1px solid #fff;
+  outline-offset: 2px;
+}
