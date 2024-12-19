@@ -60,7 +60,6 @@ ol {
 .result {
   display: flex;
   flex-direction: column;
-  align-items: start;
   gap: 16px;
 }
 
@@ -140,6 +139,15 @@ ol {
   outline: none;
 }
 
+.search-form__pseudo-checkbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 19px;
+  height: 19px;
+  border: 1px solid #fff;
+}
+
 input[type="checkbox"]:checked + .search-form__pseudo-checkbox {
   width: 15px;
   height: 15px;
@@ -155,17 +163,6 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox {
   text-decoration: underline;
   text-underline-offset: 4px;
 }
-
-.search-form__pseudo-checkbox {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 19px;
-  height: 19px;
-  border: 1px solid #fff;
-}
-
-
 
 .content__details {
   display: flex;
