@@ -117,8 +117,8 @@ ol {
   height: 27px;
   color:#fff;
   background-color: transparent;
-  font:inherit;
-  border:none;
+  font: inherit;
+  border: none;
 }
 
 .search-form__checkbox-list {
@@ -267,18 +267,6 @@ input[type=checkbox]:checked + .search-form__pseudo-checkbox::after {
 .search-form__label:has(:focus-visible) {
   outline: 1px solid #fff;
   outline-offset: 4px;
-}
-
-.search-form__checkbox:checked + .search-form__pseudo-checkbox::before {
-  content: "";
-  display: block;
-  inline-size: 15px;
-  block-size: 15px;
-  background-color: #fff;
-}
-
-.search-form__label:hover .search-form__label-text {
-  text-decoration: underline;
 }
 
 .content__card-link_current {
