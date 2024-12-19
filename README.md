@@ -1,1 +1,1 @@
-https://github.com/ale-nio/posmotri_v_okno-fd
+https://github.com/ale-nio/posmotri-v-okno-fd 
